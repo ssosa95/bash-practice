@@ -1,0 +1,24 @@
+.git/hooks/pre-rebase.sample:    Then you can delete it.  More importantly, you should not
+config_manager.py:import json
+config_manager.py:import sys
+config_manager.py:import os as o
+explore_os.py:import os as o
+explore_os.py:# import os                  # access everything as os.something()
+explore_os.py:# from os import getcwd      # bring just one function in directly
+explore_os.py:# import os as o              # alias — shorter to type
+explore_os.py:# from os import *            # avoid this one — pollutes your namespace, unclear where things came from
+greetings.py:    print("Testing greet() directly:") # only fires when you run greetings.py directly, silent when use_greetings.py imports it
+json_day11notes.py:import json
+read_json.py:import json
+sysinfo.py:import os as o
+sysinfo.py:import platform as p
+sysinfo.py:import sys
+sysinfo_basic.py:import os as o
+sysinfo_basic.py:import sys
+sysinfo_basic.py:import platform as p
+to_do_list_cli_project.py:import os as o
+to_do_list_cli_project.py:import json
+update_json.py:import json
+use_greetings.py:import greetings as g
+write_json.py:import json
+write_json.py:from sysinfo import get_system_info
