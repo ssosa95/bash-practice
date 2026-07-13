@@ -1,0 +1,24 @@
+Find all ERROR lines in practice.log
+grep "error" -i practice.log
+
+Find all lines that are NOT INFO
+grep "info" -v -i practice.log
+
+Find all lines containing a date starting with 2026-01-02
+grep "2026-01-02" practice.log
+
+Count how many ERROR lines there are — new command: wc -l counts lines. Pipe grep output into it
+grep -i "error" practice.log | wc -l
+
+Save all WARNING and ERROR lines to a file called alerts.log — think about how to do this in two steps using > and >>
+grep "WARNING" practice.log > alerts.log
+grep "ERROR" practice.log >> alerts.log
+
+List all .py files in ~/projects/python-basics using ls and grep together with a pipe
+ls | grep ".py"
+
+Searches all files in ~/projects/python-basics for the word "import"
+Filters out any results containing "datetime"
+Saves the output to import_report.txt in your bash-practice folder
+
+grep -r "import" ~/projects/python-basics | grep -v "datetime" > ~/projects/bash-practice/import_report.txt
