@@ -1,0 +1,36 @@
+hello.sh — print a greeting, then ask for the user's name and greet them by name:
+#!/bin/bash
+
+echo "Welcome to the greeting script!"
+read -p "Enter your name: " name
+echo "Hello, $name."
+
+sysinfo.sh — print the following using only Bash commands, no Python:
+
+Current date and time — hint: date is a command
+Current user — hint: whoami is a command
+Current directory
+Hostname of the machine — hint: hostname is a command
+
+#!/bin/bash
+
+date
+whoami
+pwd
+hostname
+
+
+check_file.sh — ask the user for a filename, then check if it exists and print an appropriate message. Hint: -f tests for a file, -d tests for a directory:
+
+if [ -f "$filename" ]; then
+
+#!/bin/bash
+
+read -p "Enter a filename: " filename
+
+if [ -f "$filename" ]; then 
+	echo "$filename exists."
+
+else
+	echo "Filename does not exist."
+fi
