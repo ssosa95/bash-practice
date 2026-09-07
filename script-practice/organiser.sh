@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "Welcome to the File Organizer."
-if [ -z "$1" ]; then
+if [ -z "$1" ]; then # if no argument is provided
 	echo "Please provide a folder path."
 	exit 1
 else
-	if [ -d "$1" ]; then
+	if [ -d "$1" ]; then # if the provided argument is a directory
 		echo "Folder exists."
 	else
 		echo "Folder doesn't exist. Please enter a valid folder."
@@ -13,7 +13,7 @@ else
 	fi
 fi
 
-for file in "$1"/*; do
+for file in "$1"/*; do # loop through all files in the provided directory
 	extension="${file##*.}"
 	case "$extension" in
 		pdf)
