@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Welcome to the File Organizer."
-if [ -z "$1" ]; then # if no argument is provided
+if [ -z "$1" ]; then # if no argument is provided (bash organiser.sh /path/to/folder)
 	echo "Please provide a folder path."
 	exit 1
 else
