@@ -14,7 +14,7 @@ else
 fi
 
 for file in "$1"/*; do # loop through all files in the provided directory
-	extension="${file##*.}"
+	extension="${file##*.}" # strip the file name to get the extension
 	case "$extension" in
 		pdf)
 			mkdir -p "$1/pdf_files"
