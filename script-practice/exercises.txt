@@ -12,6 +12,7 @@ Current user — hint: whoami is a command
 Current directory
 Hostname of the machine — hint: hostname is a command
 
+
 #!/bin/bash
 
 date
